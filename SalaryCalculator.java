@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-// Abstract class Employee
+
 abstract class Employee {
     String name;
     int id;
@@ -10,11 +10,9 @@ abstract class Employee {
         this.id = id;
     }
 
-    // Abstract method for salary calculation
     abstract double calculateSalary();
 }
 
-// Manager subclass
 class Manager extends Employee {
     double baseSalary;
     double bonus;
@@ -31,7 +29,6 @@ class Manager extends Employee {
     }
 }
 
-// Developer subclass
 class Developer extends Employee {
     double baseSalary;
     double projectIncentive;
@@ -48,7 +45,6 @@ class Developer extends Employee {
     }
 }
 
-// Main class
 public class SalaryCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

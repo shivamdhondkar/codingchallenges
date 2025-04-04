@@ -6,7 +6,7 @@ class Book {
     String author;
     int ISBN;
 
-    // Constructor Overloading
+    
     public Book(String t, String a, int i) {
         this.title = t;
         this.author = a;
@@ -16,12 +16,12 @@ class Book {
     public Book(String t, String a) {
         this.title = t;
         this.author = a;
-        this.ISBN = 0; // Default ISBN
+        this.ISBN = 0; 
     }
 
     public Book(String t, int i) {
         this.title = t;
-        this.author = "Unknown"; // Default author
+        this.author = "Unknown"; 
         this.ISBN = i;
     }
 }
@@ -67,7 +67,7 @@ public class LibraryManagementSystem {
             System.out.print("Enter your choice: ");
             
             int choice = scanner.nextInt();
-            scanner.nextLine(); // Consume newline
+            scanner.nextLine(); 
             
             switch (choice) {
                 case 1:
